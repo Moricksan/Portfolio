@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мое Портфолио</title>
+    <style>
+        /* Основные настройки */
+        body {
+            font-family: sans-serif;
+            margin: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            color: #333;
+            background: linear-gradient(135deg, #b4c4bb 0%, #f4c28a 100%);
+            background-attachment: fixed;
+        }
+
+        .card {
+            background: #4b4230;
+            /* Ваш темно-коричневый цвет */
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            max-width: 350px;
+            width: 90%;
+            text-align: center;
+            position: relative;
+            margin-top: 50px;
+        }
+
+        /* ИСПРАВЛЕНО: Добавлены стили для аватарки */
+        .avatar {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            /* Делает круглой */
+            object-fit: cover;
+            /* Чтобы фото не сжималось */
+            border: 4px solid #f4c28a;
+            /* Рамка в цвет градиента */
+            background-color: #eee;
+
+            /* Позиционирование сверху по центру */
+            position: absolute;
+            top: -50px;
+            left: 50%;
+            transform: translateX(-50%);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        h1 {
+            margin-top: 50px;
+            /* Отступ под фото */
+            margin-bottom: 10px;
+            color: #d4a271;
+        }
+
+        p {
+            margin-bottom: 25px;
+            color: #dcdcdc;
+            /* Сделал текст чуть светлее для читаемости на темном фоне */
+        }
+
+        /* Список навыков */
+        .skills {
+            margin-bottom: 30px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        .skill {
+            background: #b4c4bb;
+            color: #4b4230;
+            /* Темный текст на светлом фоне */
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-size: 14px;
+            font-weight: bold;
+        }
+
+        /* Кнопки контактов */
+        .contacts a {
+            display: block;
+            /* Сделал кнопками друг под другом, так аккуратнее */
+            margin: 10px 0;
+            padding: 12px 20px;
+            background: #b4c4bb;
+            color: #4b4230;
+            text-decoration: none;
+            border-radius: 8px;
+            transition: 0.3s;
+            font-weight: bold;
+        }
+
+        .contacts a:hover {
+            background: #f4c28a;
+            transform: translateY(-2px);
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="card">
+        <!-- 
+          ВАЖНО: Если фото не видно, убедитесь, что в папке с сайтом 
+          есть папка images, а в ней файл hero.jpg 
+        -->
+        <img src="images/hero.jpg" alt="Аватар" class="avatar">
+
+        <h1>George</h1>
+        <p>Начинающий веб-разработчик.</p>
+
+        <div class="skills">
+            <span class="skill">HTML</span>
+            <span class="skill">CSS</span>
+            <span class="skill">C#</span>
+            <span class="skill">Figma</span>
+        </div>
+
+        <div class="contacts">
+            <a href="https://t.me/Morikcan">Telegram</a>
+            <!-- <a href="mailto:indi.geo@mail.ru">Email</a> -->
+            <a href="https://github.com/Moricksan">GitHub</a>
+        </div>
+    </div>
+
+</body>
+
+</html>
